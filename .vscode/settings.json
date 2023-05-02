@@ -1,0 +1,27 @@
+{
+  // 全体設定
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+
+  // Prettier
+  "[css][scss][yaml][javascript][typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Java
+  "[java]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false
+  },
+  "java.format.settings.profile": "GoogleStyle",
+  "java.format.settings.url": "eclipse-java-google-style.xml",
+  "java.sources.organizeImports.staticStarThreshold": 1,
+
+  // Scss
+  "css.validate": false,
+  "scss.validate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  }
+}
