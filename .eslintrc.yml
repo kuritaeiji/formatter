@@ -1,13 +1,21 @@
+root: true
 env:
   browser: true
-  es2023: true
-extends:
-  - 'plugin:vue/vue3-recommended'
-  - 'eslint:recommended'
-  - '@vue/typescript/recommended'
-parserOptions:
-  ecmaVersion: 14
+  es2022: true
+parser: vue-eslint-parser
 plugins:
-  - vue
   - '@typescript-eslint'
-rules: {}
+parserOptions:
+  parser: '@typescript-eslint/parser'
+  project: ./tsconfig.json
+  sourceType: module
+  ecmaVersion: 2023
+  extraFileExtensions: ['.vue']
+extends:
+  - eslint:recommended
+  - plugin:vue/vue3-recommended
+  - '@vue/eslint-config-typescript/recommended'
+  - '@nuxtjs/eslint-config-typescript'
+  - 'eslint-config-prettier'
+rules:
+  vue/multi-word-component-names: off
