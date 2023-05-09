@@ -1,21 +1,16 @@
 root: true
-env:
-  browser: true
-  es2022: true
 parser: vue-eslint-parser
 plugins:
   - '@typescript-eslint'
 parserOptions:
   parser: '@typescript-eslint/parser'
   project: ./tsconfig.json
-  sourceType: module
-  ecmaVersion: 2023
   extraFileExtensions: ['.vue']
 extends:
-  - eslint:recommended
-  - plugin:vue/vue3-recommended
-  - '@vue/eslint-config-typescript/recommended'
+  - airbnb-base
+  - airbnb-typescript/base
   - '@nuxtjs/eslint-config-typescript'
-  - 'eslint-config-prettier'
+  - 'prettier'
 rules:
-  vue/multi-word-component-names: off
+  'import/extensions':
+    - off
