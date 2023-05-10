@@ -1,3 +1,3 @@
 - yarn add -D eslint eslint-config-airbnb-base eslint-config-airbnb-typescript @nuxtjs/eslint-config-typescript eslint-config-prettier
 - yarn add -D prettier
-- yarn add -D stylelint stylelint-config-recommended stylelint-config-prettier stylelint-scss stylelint-config-recommended-scss
+- yarn add -D stylelint stylelint-config-recommended stylelint-config-prettier stylelint-scss stylelint-config-recommended-scss stylelint-prettier
